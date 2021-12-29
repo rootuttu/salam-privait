@@ -410,8 +410,7 @@ class GoogleDriveHelper:
                     return "your clone has been stopped and cloned data has been deleted!", "cancelled"
                 msg += f'╭─📂<b>Filename: </b><code>{meta.get("name")}</code>\n├─💾<b>Size: </b><code>{get_readable_file_size(self.transferred_size)}</code>'
                 msg += '\n├─✴️<b>Type: </b><code>Folder</code>'
-                msg += f'\n├─🗂️SubFolders: 0
-<b>SubFolders: </b><code>{self.total_folders}</code>'
+                msg += f'\n├─🗂️<b>SubFolders: </b><code>{self.total_folders}</code>'
                 msg += f'\n├─📚<b>Files: </b><code>{self.total_files}</code>'
                 buttons = button_build.ButtonMaker()
                 if SHORTENER is not None and SHORTENER_API is not None:
