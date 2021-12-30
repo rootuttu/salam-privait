@@ -34,7 +34,7 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'╭───『🦾 𝑩𝒐𝒕 𝑺𝒕𝒂𝒕𝒊𝒄𝒔 🦾』\n\n├─🤖<b>Bot Uptime:</b> {currentTime}\n' \
+    stats = f'╭───『🦾 𝑩𝒐𝒕 𝑺𝒕𝒂𝒕𝒊𝒄𝒔 🦾』\n│\n├─🤖<b>Bot Uptime:</b> {currentTime}\n' \
             f'├─💽<b>Total Disk Space:</b> {total}\n' \
             f'├─💻<b>Used:</b> {used} │ ' \
             f'💾<b>Free:</b> {free}\n│\n' \
@@ -42,7 +42,7 @@ def stats(update, context):
             f' │ 📥<b>Download:</b> {recv}\n│\n' \
             f'├─🖥️<b>CPU:</b> {cpuUsage}%\n' \
             f'├─📏<b>RAM:</b> {memory}%\n' \
-            f'├─💿<b>DISK:</b> {disk}%\n\n╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
+            f'├─💿<b>DISK:</b> {disk}%\n│\n╰───『💥 𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫 💥』'
     sendMessage(stats, context.bot, update)
 
 
