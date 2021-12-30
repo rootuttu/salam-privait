@@ -25,7 +25,7 @@ def speedtest(update, context):
 📤<b>Upload:</b> <code>{speed_convert(result['upload'] / 8)}</code>
 📥<b>Download:</b>  <code>{speed_convert(result['download'] / 8)}</code>
 ⛏️<b>Ping:</b> <code>{result['ping']} ms</code>
-<b>I🎯SP Rating:</b> <code>{result['client']['isprating']}</code>
+🎯<b>ISP Rating:</b> <code>{result['client']['isprating']}</code>
 '''
     editMessage(string_speed, speed)
 
