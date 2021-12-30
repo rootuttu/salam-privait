@@ -38,8 +38,8 @@ def stats(update, context):
             f'├─💽<b>Total Disk Space:</b> {total}\n' \
             f'├─💻<b>Used:</b> {used} │ ' \
             f'💾<b>Free:</b> {free}\n│\n' \
-            f'├─🛰️Data Usage\n├─📤<b>Upload:</b> {sent}\n' \
-            f'├─📥<b>Download:</b> {recv}\n│\n' \
+            f'├─🛰️Data Usage\n├─📤<b>Upload:</b> {sent}' \
+            f' │ 📥<b>Download:</b> {recv}\n│\n' \
             f'├─🖥️<b>CPU:</b> {cpuUsage}%\n' \
             f'├─📏<b>RAM:</b> {memory}%\n' \
             f'├─💿<b>DISK:</b> {disk}%\n\n╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
